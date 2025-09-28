@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="weather-app">
+    <div class="weather-logo">
+      <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="32" cy="32" r="20" fill="#ffe066"/>
+        <ellipse cx="44" cy="44" rx="14" ry="8" fill="#b3e0ff"/>
+        <ellipse cx="28" cy="48" rx="12" ry="6" fill="#e0f7fa"/>
+        <ellipse cx="38" cy="40" rx="10" ry="5" fill="#fff"/>
+      </svg>
+    </div>
+    <h1>Weather App</h1>
+    <button id="lang-toggle" type="button" class="lang-toggle-btn">ไทย</button>
+    <form id="weather-form">
+      <input type="text" id="city-input" placeholder="Search" required>
+      <button type="submit" aria-label="Search">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+    </form>
+    <div id="weather-result" class="weather-result">
+      <!-- Weather result will be rendered here. Temperature will be centered and large. -->
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
